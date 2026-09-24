@@ -352,4 +352,4 @@ export async function subscribeNewsletterAction(_prev: FormState, formData: Form
   await ensureDb();
   await db.insert(newsletterSubscribers).values({ email }).onConflictDoNothing();
   return { success: "You're on the list. Look out for new arrivals and member-only offers." };
-}ش
+}
